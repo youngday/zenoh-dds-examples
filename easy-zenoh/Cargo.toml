@@ -1,0 +1,116 @@
+
+[package]
+name = "zenoh_examples"
+version = "0.4.0"
+authors = ["youngday"]
+edition = "2021"
+[dependencies]
+tokio = {version="1.36",  features = ["rt-multi-thread", "time", "io-std"] }
+clap = { version="4.5.3", features = ["derive"] }
+env_logger = "0.11"
+flume = "0.11"
+futures = "0.3.30"
+git-version = "0.3.9"
+json5 = "0.4.1"
+log = "0.4.21"
+zenoh = "0.10.1-rc"
+zenoh-ext = "0.10.1-rc"
+
+[dev-dependencies]
+rand = {version="0.8.5",  features = ["default"] }
+
+[build-dependencies]
+rustc_version = "0.4"
+
+# [[example]]
+# name = "z_scout"
+# path = "examples/z_scout.rs"
+
+# [[example]]
+# name = "z_info"
+# path = "examples/z_info.rs"
+
+# [[example]]
+# name = "z_put"
+# path = "examples/z_put.rs"
+
+# [[example]]
+# name = "z_put_float"
+# path = "examples/z_put_float.rs"
+
+# [[example]]
+# name = "z_delete"
+# path = "examples/z_delete.rs"
+
+# [[example]]
+# name = "z_formats"
+# path = "examples/z_formats.rs"
+
+# [[example]]
+# name = "z_pub"
+# path = "examples/z_pub.rs"
+
+# [[example]]
+# name = "z_pub_shm"
+# path = "examples/z_pub_shm.rs"
+# required-features = ["shared-memory"]
+
+# [[example]]
+# name = "z_sub"
+# path = "examples/z_sub.rs"
+
+# [[example]]
+# name = "z_pull"
+# path = "examples/z_pull.rs"
+
+# [[example]]
+# name = "z_queryable"
+# path = "examples/z_queryable.rs"
+
+# [[example]]
+# name = "z_storage"
+# path = "examples/z_storage.rs"
+
+# [[example]]
+# name = "z_get"
+# path = "examples/z_get.rs"
+
+# [[example]]
+# name = "z_forward"
+# path = "examples/z_forward.rs"
+
+# [[example]]
+# name = "z_liveliness"
+# path = "examples/z_liveliness.rs"
+# required-features = ["unstable"]
+
+# [[example]]
+# name = "z_sub_liveliness"
+# path = "examples/z_sub_liveliness.rs"
+# required-features = ["unstable"]
+
+# [[example]]
+# name = "z_get_liveliness"
+# path = "examples/z_get_liveliness.rs"
+# required-features = ["unstable"]
+
+# [[example]]
+# name = "z_pub_thr"
+# path = "examples/z_pub_thr.rs"
+
+# [[example]]
+# name = "z_sub_thr"
+# path = "examples/z_sub_thr.rs"
+
+# [[example]]
+# name = "z_pub_shm_thr"
+# path = "examples/z_pub_shm_thr.rs"
+# required-features = ["shared-memory"]
+
+# [[example]]
+# name = "z_ping"
+# path = "examples/z_ping.rs"
+
+# [[example]]
+# name = "z_pong"
+# path = "examples/z_pong.rs"
